@@ -1,0 +1,68 @@
+@media all and (max-device-width: 655px)
+{
+    body {
+        
+        width: 95%;
+    }
+/***********************************HEADER********************************/
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        height: 10em;
+    }
+
+    .header_picture {
+        width: 40%;
+        height: 12%;
+        position: absolute;
+        top: 0em;
+        left: 0.5em;
+    }
+
+    .menu {
+        display: flex;       
+        flex-direction: column-reverse;
+    }
+
+    .header_btn_1{        
+        width: 50%;
+        position: absolute;
+        top:4em;
+        left: 0em;
+        border-bottom: 5px solid #0065FC;
+        padding-bottom: 0.5em;
+        margin-right: -0em;   
+        text-align:center; 
+        border-top: 15px solid transparent;
+        
+    }
+    .header_btn_1:hover{
+        border-top: 15px solid transparent;
+    }
+
+    .header_btn_1 > a{
+        color: #0065FC;
+    }
+    
+    .header_btn_2 {
+        width: 50%;
+        top:4em;
+        position: absolute;
+        right: 0em;
+        border-bottom: 5px solid #f2f2f2;
+        padding-bottom: 0.5em;
+        text-align:center;
+        border-top: 15px solid transparent;
+    }
+    .header_btn_2:hover{
+      
+        border-top: 15px solid transparent;
+    }
+    .header_btn_3{
+        position: absolute;
+        top: -0.5em;
+        right: 0.7em;
+    }
+/***************************************************************************/
+}

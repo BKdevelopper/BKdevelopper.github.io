@@ -1,3 +1,77 @@
-.body{
-    color:red;
+body{
+    margin:auto;
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
 }
+/***********************************HEADER********************************/
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 75px;
+    width: 100%;
+}
+.header_picture{
+    width: 140px;
+    height: 100%;
+}
+.menu {
+	display: flex;
+	
+	align-items: flex-end;
+
+	list-style: none;
+	
+}
+.menu > nav {
+	width: 100%;
+
+}
+.menu > nav > ul {
+	display: flex;
+	list-style-type: none;
+	
+	height: 100%;
+	
+}
+.menu > a {
+	margin: 15px 15px 15px 15px;
+	color: #0065FC;
+	height: 50px;
+    font-weight: bold;
+    text-decoration: none; 
+    color: #0065FC;
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu > nav > ul > li  {
+    padding-top: 2em;
+}
+
+.header_btn_1{    
+    border-top: 10px solid white;
+    width: 10em;
+    text-align: center;
+}
+.header_btn_1:hover{    
+    border-top: 10px solid #0065FC;
+}
+.header_btn_2{    
+    border-top: 10px solid white;
+    width: 10em;
+    text-align: center;
+}
+.header_btn_2:hover{  
+    border-top: 10px solid #0065FC;
+}
+.header_btn_1 > a{    
+    text-decoration: none;
+    color:#0065FC;
+}
+
+.header_btn_2 > a{    
+    text-decoration: none;
+    color:black;
+}
+/***************************************************************************/
