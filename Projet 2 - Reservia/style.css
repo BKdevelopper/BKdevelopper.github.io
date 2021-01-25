@@ -3,6 +3,12 @@ body{
     width: 80%;
     font-family: 'Raleway', sans-serif;
 }
+h1, h2 {
+	font-size: 1.1em;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	height: 2%;
+}
 /***********************************HEADER********************************/
 header{
     display: flex;
@@ -74,4 +80,40 @@ header{
     text-decoration: none;
     color:black;
 }
-/***************************************************************************/
+/***********************SECTION N°1********************/
+.search {
+	display: flex;
+	height: 45px;
+	margin-bottom: 30px;
+}
+.search > i.localisation {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	background-color: #F2F2F2;
+	color: black;
+	border-top-left-radius: 11px;
+	border-bottom-left-radius: 11px;
+	width: 3em;
+
+}
+input {
+	height: 90%;
+    border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+button {
+	background-color: #0065FC;
+	color: white;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 11px;
+	font-family: 'Raleway', sans-serif;
+    width: 8em;
+    height: 100%;
+    font-weight: bold;
+    border: none;
+}
+.search > .icone-recherche {
+    display: none;
+}
