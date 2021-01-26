@@ -108,4 +108,24 @@
     .search > button {
         display: none;
     }
+
+    .filtre_li{        
+            width: auto;
+            height: 2.5em;
+            margin: 0.7em 2em 0.7em 0em;
+            border: 0.1em solid #cecece;
+            border-radius: 2em;
+            padding-right: 0.8em;
+        
+    }
+    .filtre > ul{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .text_li{
+        width: 60%;
+    }
+    .icon_info {
+        width: 33px;
+    }
 }
