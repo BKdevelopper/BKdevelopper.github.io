@@ -209,4 +209,48 @@
         margin-right: 0em; 
         font-size: 0.7em;
     }
+    /***********SECTION 3**********/
+
+    .container_activity{
+        flex-direction: column;
+    }
+    .activity{
+        width: 100%;
+        height: 39%;
+    }
+    .activity_picture{
+        height: 64%;
+    }
+    .column_activity{
+        width: 100%;        
+    }
+    #activity_1{
+        margin-bottom: 1em;
+    }
+    #activity_2{
+        margin-bottom: 1em;
+        padding-bottom: 0em;
+        height: 39%;
+    }
+    #activity_3{
+        padding-bottom: 0em;
+        height: 39%;
+    }
+    #activity_4{
+        margin-top: -3.4em;
+        margin-bottom: 1em;
+    }
+    #activity_5{
+        margin-bottom: 1em;
+        padding-bottom: 0em;
+    }
+    #activity_6{
+        padding-bottom: 0em;
+
+    }
+
+    /***********FOOTER**********/
+    footer{
+        display: none;
+    }
 }
