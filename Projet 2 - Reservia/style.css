@@ -4,10 +4,13 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 h1, h2 {
-	font-size: 1.1em;
+	
 	margin-top: 50px;
 	margin-bottom: 15px;
 	height: 2%;
+}
+p{
+	font-size: 1.1em;
 }
 /***********************************HEADER********************************/
 header{
@@ -182,4 +185,127 @@ button {
 	align-items: center;
 	height: 50px;
 	margin-bottom: 2em;
+}
+/***********************SECTION 2***********************/
+#section_two{
+	display: flex;
+}
+.container {
+	width: 70%;
+	height: auto;
+	background-color: #F2F2F2;
+	padding: 0 1.1em 0 1.1em;
+	margin-right: 6em;
+	border-radius: 21px;
+}
+	
+.container_one {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 35px;
+	padding-left: 35px;
+}
+.container_two {
+	
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding-left: 1em;
+	padding-right: 2em;
+}
+.lodging {
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
+	width: 29%;
+	margin-bottom: 3em;
+	box-shadow: 1px 1px 9px #555;
+	height: auto;
+}
+.Presentation_picture {
+	width: 100%;
+	height: 150px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.blue{
+	color: #0065FC;
+}
+.grey{
+	color: gray;
+}
+
+.titlelodging{
+	margin-left: 14px;
+ 	margin-top: -39px;
+}
+#titlecontainer{
+	margin-left: 1.5em;
+	
+}
+#more {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-left: 2em;
+}
+
+.Presentation_picture_1 {
+	width: 13em;
+	height: 13em;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.best_lodging{
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 3em;
+	box-shadow: 1px 1px 9px #555;
+	height: 13em;
+	display: flex;
+}
+.container_1{
+	height: auto;
+	background-color: #F2F2F2;
+	padding: 0 1.1em 0 1.1em;
+	
+	border-radius: 21px;
+}
+.titlelodging_1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 14px;
+	margin-top: -39px;
+	margin-right: 2em;
+}
+
+.star_1{
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+.text_1{
+	margin-left: 1em;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1em;
+}
+.title > i{
+	padding-top: 1.9em;
+}
+.popular{
+	font-size: 1.4em;
 }

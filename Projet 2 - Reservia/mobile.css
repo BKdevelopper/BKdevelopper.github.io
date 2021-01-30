@@ -1,10 +1,10 @@
-@media all and (max-device-width: 655px)
-{
+@media all and (max-device-width: 655px) {
     body {
-        
+
         width: 95%;
     }
-/***********************************HEADER********************************/
+
+    /***********************************HEADER********************************/
 
     header {
         display: flex;
@@ -21,55 +21,60 @@
     }
 
     .menu {
-        display: flex;       
+        display: flex;
         flex-direction: column-reverse;
     }
 
-    .header_btn_1{        
+    .header_btn_1 {
         width: 50%;
         position: absolute;
-        top:4em;
+        top: 4em;
         left: 0em;
         border-bottom: 5px solid #0065FC;
         padding-bottom: 0.5em;
-        margin-right: -0em;   
-        text-align:center; 
+        margin-right: -0em;
+        text-align: center;
         border-top: 15px solid transparent;
-        
+
     }
-    .header_btn_1:hover{
+
+    .header_btn_1:hover {
         border-top: 15px solid transparent;
     }
 
-    .header_btn_1 > a{
+    .header_btn_1>a {
         color: #0065FC;
     }
-    
+
     .header_btn_2 {
         width: 50%;
-        top:4em;
+        top: 4em;
         position: absolute;
         right: 0em;
         border-bottom: 5px solid #f2f2f2;
         padding-bottom: 0.5em;
-        text-align:center;
+        text-align: center;
         border-top: 15px solid transparent;
     }
-    .header_btn_2:hover{
-      
+
+    .header_btn_2:hover {
+
         border-top: 15px solid transparent;
     }
-    .header_btn_3{
+
+    .header_btn_3 {
         position: absolute;
         top: -0.5em;
         right: 0.7em;
     }
-/***************SECTION N°1****************/
+
+    /***************SECTION N°1****************/
     .search {
         height: 3em;
         width: 100%;
     }
-    .search > i.localisation {
+
+    .search>i.localisation {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,7 +85,8 @@
         border-bottom-left-radius: 1em;
 
     }
-    .recherche > input {
+
+    .recherche>input {
         width: 65%;
         height: auto;
         padding-left: 0.5em;
@@ -88,7 +94,8 @@
         border-top: 3px solid #F2F2F2;
         border-bottom: 3px solid #F2F2F2;
     }
-    .search > .icone-recherche {
+
+    .search>.icone-recherche {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -97,7 +104,8 @@
         color: white;
         background-color: #0065fc;
     }
-    .search > input {
+
+    .search>input {
         width: 66%;
         height: auto;
         padding-left: 0.5em;
@@ -105,27 +113,100 @@
         border-top: 3px solid #F2F2F2;
         border-bottom: 3px solid #F2F2F2;
     }
-    .search > button {
+
+    .search>button {
         display: none;
     }
 
-    .filtre_li{        
-            width: auto;
-            height: 2.5em;
-            margin: 0.7em 2em 0.7em 0em;
-            border: 0.1em solid #cecece;
-            border-radius: 2em;
-            padding-right: 0.8em;
-        
+    .filtre_li {
+        width: auto;
+        height: 2.5em;
+        margin: 0.7em 2em 0.7em 0em;
+        border: 0.1em solid #cecece;
+        border-radius: 2em;
+        padding-right: 0.8em;
+
     }
-    .filtre > ul{
+
+    .filtre>ul {
         flex-wrap: wrap;
         width: 100%;
     }
-    .text_li{
+
+    .text_li {
         width: 60%;
     }
+
     .icon_info {
         width: 33px;
+    }
+
+    /***************SECTION 2 *****************/
+    #section_two {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        width: 100%;
+        margin-right: 0em;
+        margin-left: -1em;
+        background-color: transparent;
+    }
+
+    #titlecontainer {
+        margin-left: 0em;
+    }
+
+    .container_one {
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .lodging {
+        width: 100%;
+        box-shadow: 0px 0px 0px #555;
+        /* height: auto;         */
+        margin-bottom: 1em;
+    }
+
+    .Presentation_picture {
+        width: 100%;
+        height: 40%;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        object-fit: cover;
+    }
+
+    .titlelodging {
+        margin-left: 14px;
+        margin-top: -39px;
+    }
+
+    .container_1{
+        width: 100%;
+        border-radius: 0px;
+        margin-left: -8px;
+    }
+    .container_two {
+       
+       
+         padding-left: 0em; 
+       
+    }
+    .best_lodging {
+        box-shadow: 1px 1px 3px #555;
+        height: 9em;
+        
+    }
+    .Presentation_picture_1 {
+        width: 45%;
+        height: 9em;
+    }
+    .titlelodging_1 {
+        margin-left: 14px;
+        margin-top: -51px;
+        margin-right: 0em; 
+        font-size: 0.7em;
     }
 }
