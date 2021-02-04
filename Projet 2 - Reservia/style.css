@@ -6,7 +6,6 @@ body {
 
 h1,
 h2 {
-
 	margin-top: 50px;
 	margin-bottom: 15px;
 	height: 2%;
@@ -212,7 +211,17 @@ button {
 #section_two {
 	display: flex;
 }
-
+.text-price{
+	font-size: 1em;
+	margin-bottom: 0.2em;
+	margin-top: 0.2em;
+}
+#titlecontainer{
+	margin-bottom: 41px;
+}
+.title_popular{
+	font-size: 1.3em;
+}
 .container {
 	width: 70%;
 	height: auto;
@@ -222,12 +231,14 @@ button {
 	border-radius: 21px;
 }
 
+.group_lodging{
+	width: 32%;
+}
 .container_one {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-right: 35px;
-	padding-left: 35px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .container_two {
@@ -242,7 +253,6 @@ button {
 	border-radius: 20px;
 	background-color: rgb(255, 255, 255);
 	padding: 5px;
-	width: 29%;
 	margin-bottom: 3em;
 	box-shadow: 1px 1px 9px #555;
 	height: auto;
@@ -267,6 +277,9 @@ button {
 .titlelodging {
 	margin-left: 14px;
 	margin-top: -39px;
+	padding-bottom: 1em;
+    padding-top: 3em;
+}
 }
 
 #titlecontainer {
@@ -283,8 +296,8 @@ button {
 }
 
 .Presentation_picture_1 {
-	width: 13em;
-	height: 13em;
+	width: 11em;
+	height: 10em;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	object-fit: cover;
@@ -297,7 +310,7 @@ button {
 	width: 100%;
 	margin-bottom: 3em;
 	box-shadow: 1px 1px 9px #555;
-	height: 13em;
+	height: 10em;
 	display: flex;
 }
 
