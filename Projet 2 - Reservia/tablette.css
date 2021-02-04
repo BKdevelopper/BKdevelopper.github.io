@@ -4,7 +4,7 @@
     }
     .container {
         width: 100%;
-        
+        padding: 0 1.1em 1em 1.1em;
     }
     .container_1{
         width: 100%;
@@ -14,12 +14,18 @@
         font-size: 0.9em;
     }
     .text-city{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .text_li {
         width: 100%;
     }
+    .body{
+        width: 85%;
+    }
+    footer{
+        height: auto;
+    }
     .footer_info {
-        padding-right: 1em;
+        margin-right: 1EM;
     }
 }
