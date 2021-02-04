@@ -19,4 +19,7 @@
     .text_li {
         width: 100%;
     }
+    .footer_info {
+        padding-right: 1em;
+    }
 }

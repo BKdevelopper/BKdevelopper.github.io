@@ -149,6 +149,8 @@
         margin-right: 0em;
         margin-left: -1em;
         background-color: transparent;
+        padding-right: 0em;
+        margin-right: 0em;
     }
 
     #titlecontainer {
@@ -197,6 +199,7 @@
         width: 100%;
         border-radius: 0px;
         margin-left: -8px;
+        padding-right: 0em;
     }
 
     .container_two {
