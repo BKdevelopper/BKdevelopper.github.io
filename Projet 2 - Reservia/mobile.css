@@ -19,9 +19,11 @@
         top: 0em;
         left: 0.5em;
     }
-    .title{
+
+    .title {
         margin-top: 10px;
     }
+
     .menu {
         display: flex;
         flex-direction: column-reverse;
@@ -149,34 +151,37 @@
         margin-right: 0em;
         margin-left: -1em;
         background-color: transparent;
-        padding-right: 0em;
+        padding-right: 0;
         margin-right: 0em;
     }
 
     #titlecontainer {
         margin-left: 0em;
     }
-    .text-price{
+
+    .text-price {
         margin-bottom: 0px;
         margin-top: 0px;
     }
+
     .container_one {
         padding-right: 0px;
         padding-left: 0px;
         width: 100%;
         flex-direction: column;
     }
-    #titlecontainer{
+
+    #titlecontainer {
         margin-bottom: 24px;
     }
-    .group_lodging{
+
+    .group_lodging {
         width: 98%;
     }
+
     .lodging {
-        width: 100%;
-        /* box-shadow: 0px 0px 0px #555; */
-        margin-bottom: 2em;
-        /* height: 10em; */
+        width: 100%;        
+        margin-bottom: 2em;        
         padding: 0em;
     }
 
@@ -223,9 +228,11 @@
         margin-right: 0em;
         font-size: 0.7em;
     }
-    #more{
+
+    #more {
         margin-left: 0em;
     }
+
     /***********SECTION 3**********/
 
     .container_activity {

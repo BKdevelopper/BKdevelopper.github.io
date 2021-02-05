@@ -15,10 +15,11 @@ p {
 	font-size: 1.1em;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: black;
 }
+
 /***********************************HEADER********************************/
 header {
 	display: flex;
@@ -215,17 +216,21 @@ button {
 #section_two {
 	display: flex;
 }
-.text-price{
+
+.text-price {
 	font-size: 1em;
 	margin-bottom: 0.2em;
 	margin-top: 0.2em;
 }
-#titlecontainer{
+
+#titlecontainer {
 	margin-bottom: 41px;
 }
-.title_popular{
+
+.title_popular {
 	font-size: 1.3em;
 }
+
 .container {
 	width: 70%;
 	height: auto;
@@ -235,9 +240,10 @@ button {
 	border-radius: 21px;
 }
 
-.group_lodging{
+.group_lodging {
 	width: 32%;
 }
+
 .container_one {
 	display: flex;
 	justify-content: space-between;
@@ -282,7 +288,7 @@ button {
 	margin-left: 14px;
 	margin-top: -39px;
 	padding-bottom: 1em;
-    padding-top: 3em;
+	padding-top: 3em;
 }
 }
 
