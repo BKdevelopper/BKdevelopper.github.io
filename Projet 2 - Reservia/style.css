@@ -302,7 +302,7 @@ button {
 	padding-bottom: 1em;
 	padding-top: 3em;
 }
-}
+
 
 #titlecontainer {
 	margin-left: 1.5em;
@@ -419,8 +419,6 @@ button {
 	height: 100%;
 }
 
-#activity_1 {}
-
 #activity_2 {
 	width: 100%;
 	height: 50%;
@@ -434,7 +432,6 @@ button {
 	padding-bottom: 2em;
 }
 
-#activity_4 {}
 
 #activity_5 {
 	width: 100%;
