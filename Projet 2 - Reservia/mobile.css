@@ -1,6 +1,6 @@
 @media all and (max-device-width: 768px) {
-    body {
-
+   
+    .container_website{
         width: 95%;
     }
 
@@ -97,13 +97,14 @@
     }
 
     .search>.icon-search {
-        width: 15%;
-        border-radius: 0.9em;
+        width: 15%;        
         color: white;
         background-color: #0065fc;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-top-right-radius:0.9em;
+        border-bottom-right-radius: 0.9em;
     }
 
     .search>input {
@@ -157,11 +158,13 @@
 
     #titlecontainer {
         margin-left: 0em;
+        padding-left: 0px;
     }
 
     .text-price {
         margin-bottom: 0px;
         margin-top: 0px;
+        height: auto;
     }
 
     .container_one {

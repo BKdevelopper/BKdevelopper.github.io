@@ -1,4 +1,7 @@
 @media all and (max-width: 1200px) {
+    h1, h2 {
+        margin-top: 50px;
+    }
     #section_two {
         flex-direction: column;
     }
@@ -15,6 +18,7 @@
 
     .text-price {
         font-size: 0.9em;
+        height: auto;
     }
 
     .text-city {
@@ -31,9 +35,10 @@
 
     footer {
         height: auto;
+        justify-content: space-between;
     }
 
     .footer_info {
-        margin-right: 1EM;
+        margin-right: 2EM;
     }
 }
