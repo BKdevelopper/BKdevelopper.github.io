@@ -1,9 +1,12 @@
 @media all and (max-width: 1200px) {
-    h1, h2 {
+
+    h1,
+    h2 {
         margin-top: 50px;
     }
+
     #section_two {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .container {

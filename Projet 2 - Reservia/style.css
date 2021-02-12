@@ -2,10 +2,12 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 }
-.container_website{
+
+.container_website {
 	margin: auto;
 	width: 80%;
 }
+
 h1,
 h2 {
 	margin-top: 40px;
@@ -97,9 +99,11 @@ header {
 	text-decoration: none;
 	color: black;
 }
-.animaux{
-	min-width: 189px;
+
+.animaux {
+	white-space: nowrap;
 }
+
 /***********************SECTION N°1********************/
 .search {
 	display: flex;
@@ -116,15 +120,19 @@ header {
 	border-top-left-radius: 11px;
 	border-bottom-left-radius: 11px;
 	width: 3em;
-
+	height: 45px;
 }
 
 input {
-	height: 90%;
+	height: 41px;
 	border: none;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	padding-left: 10px;
+	outline: none;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	;
 }
 
 button {
@@ -134,7 +142,7 @@ button {
 	border-bottom-right-radius: 11px;
 	font-family: 'Raleway', sans-serif;
 	width: 8em;
-	height: 100%;
+	height: 45px;
 	font-weight: bold;
 	border: none;
 }
@@ -188,11 +196,6 @@ button {
 	height: 2.4em;
 }
 
-.animaux {
-	padding-right: 0px;
-	width: 32%;
-}
-
 .filtre_li:hover {
 	cursor: pointer;
 	border: 2px solid #000000;
@@ -228,28 +231,24 @@ button {
 	margin-bottom: 0.2em;
 	margin-top: 0.2em;
 }
-@media all and (max-width: 1648px){
-    .text-price {
-        height: 36px;
-    }
-}
 
 #titlecontainer {
 	margin-bottom: 41px;
-	padding-left: 15px;
+	/* padding-left: 15px;
+	margin-left: 1.5em; */
 }
 
 .title_popular {
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 
 .container {
-	width: 70%;
+	width: 60%;
 	height: auto;
 	background-color: #F2F2F2;
-	padding: 0 1.1em 0 1.1em;
 	margin-right: 6em;
 	border-radius: 21px;
+	padding: 0 2em;
 }
 
 .group_lodging {
@@ -259,8 +258,8 @@ button {
 .container_one {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 15px;
-	padding-left: 15px;
+	/* padding-right: 15px;
+	padding-left: 15px; */
 }
 
 .container_two {
@@ -276,7 +275,7 @@ button {
 	background-color: rgb(255, 255, 255);
 	padding: 5px;
 	margin-bottom: 3em;
-	box-shadow: 1px 1px 9px #555;
+	box-shadow: 0px 2px 0px #55555547;
 	height: auto;
 }
 
@@ -301,12 +300,7 @@ button {
 	margin-top: -39px;
 	padding-bottom: 1em;
 	padding-top: 3em;
-}
-
-
-#titlecontainer {
-	margin-left: 1.5em;
-
+	white-space: nowrap;
 }
 
 #more {
@@ -314,7 +308,7 @@ button {
 	color: black;
 	font-weight: bold;
 	font-size: 1.3em;
-	margin-left: 1em;
+	/* margin-left: 1em; */
 }
 
 .Presentation_picture_1 {
@@ -340,7 +334,7 @@ button {
 	height: auto;
 	background-color: #F2F2F2;
 	padding: 0 1.1em 0 1.1em;
-
+	width: 30%;
 	border-radius: 21px;
 }
 
@@ -350,7 +344,7 @@ button {
 	justify-content: space-between;
 	margin-left: 14px;
 	margin-top: -39px;
-	margin-right: 2em;
+	margin-right: 1.3em;
 }
 
 .star_1 {
@@ -376,7 +370,7 @@ button {
 }
 
 .title>i {
-	padding-top: 1.9em;
+	padding-top: 1.4em;
 }
 
 .popular {
@@ -401,7 +395,7 @@ button {
 	width: 20%;
 	height: 100%;
 	border-radius: 20px;
-	box-shadow: 1px 1px 5px #555;
+	box-shadow: 0px 2px 0px #55555540;
 }
 
 .activity_picture {
@@ -451,13 +445,21 @@ h3 {
 }
 
 footer {
+	width: 100%;
+	background-color: #F2F2F2;
+	margin-top: 5em;
+	height: 14em;
+
+}
+
+.container_footer {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	margin-top: 5em;
-	background-color: #F2F2F2;
-	width: 100%;
-	height: 14em;
+
+	margin: auto;
+	width: 80%;
+
 }
 
 .footer_info {
