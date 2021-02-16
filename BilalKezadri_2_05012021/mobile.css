@@ -62,6 +62,7 @@
 
     .header_btn_2:hover {
         border-top: 15px solid transparent;
+        border-bottom: 5px solid #0065FC;
     }
 
     .header_btn_3 {
@@ -300,4 +301,9 @@
         align-items: flex-start;
         flex-direction: column;
     }
+    @media (orientation: landscape) { 
+        .header_picture{
+        top: 1.5em;
+        left: -3.5em;
+      }
 }
