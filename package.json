@@ -1,16 +1,17 @@
 {
   "name": "bkdevelopper.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Restaurant",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./BilalKezadri_3_12022021/sass/main.scss:./BilalKezadri_3_12022021/public/css/style.css"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BKdevelopper/BKdevelopper.github.io.git"
   },
-  "author": "",
+  "author": "BK",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BKdevelopper/BKdevelopper.github.io/issues"
