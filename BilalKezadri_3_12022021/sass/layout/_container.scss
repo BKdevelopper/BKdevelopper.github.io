@@ -2,6 +2,6 @@
     margin: $layout-margin;
     padding: $grid-gutter $grid-gutter 0 $grid-gutter;
     @include border($colour-accent);
-    background-color: red;
+    background-color: rgba(255, 0, 212, 0.747);
 }
 
