@@ -22,17 +22,17 @@
 }
 
 @mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
     cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
-    }
+    border: none;
+    margin: auto;    
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    width: 70%;
+    max-width: 250px;
+    border-radius: 5rem;
+    background: linear-gradient(to top left, $colour-primary, $colour-secondary);
+    color: white;
+    box-shadow: 1px 4px 8px 0px #8080809e;
 }

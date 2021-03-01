@@ -6,21 +6,19 @@
   box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   box-sizing: border-box;
-  background: #001534;
+  max-width: 1366px;
+}
+
+html {
+  width: 70%;
+  margin: auto;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #15DEA5;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 1.7;
+  width: 100%;
 }
 
 h1 {
@@ -28,6 +26,11 @@ h1 {
   font-weight: 900;
   font-size: 5rem;
   font-style: italic;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 textarea {
@@ -38,40 +41,36 @@ textarea {
 
 button {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
 }
 
 .btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
   cursor: pointer;
-}
-.btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
-}
-.btn--full-width {
-  width: 100%;
-  margin: 0 auto;
+  border: none;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  width: 70%;
+  max-width: 250px;
+  border-radius: 5rem;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
+  box-shadow: 1px 4px 8px 0px #8080809e;
 }
 
 .header {
-  background: #15DEA5;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   width: 100%;
+  height: 100%;
+}
+.header__url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
 }
 .header__logo {
-  font-size: 7rem;
-  color: #001534;
-  margin-left: 10rem;
-  text-shadow: 0.55rem 0.55rem #fff;
+  margin: 1rem;
 }
 
 .nav {
@@ -86,14 +85,14 @@ button {
 }
 .nav__link a {
   text-decoration: none;
-  color: #D6FFF5;
+  color: #99E2D0;
 }
 .nav__link--active {
-  color: #001534;
+  color: #FF79DA;
 }
 .nav__link--active:hover {
   cursor: default;
-  color: #001534;
+  color: #FF79DA;
 }
 .nav__link a:hover {
   color: #fff;
@@ -102,8 +101,95 @@ button {
 .container {
   margin: 6rem;
   padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
+  border: 0.1rem solid #99E2D0;
   background-color: rgba(255, 0, 212, 0.747);
+}
+
+.map {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+}
+.map__logo {
+  margin-right: 1rem;
+}
+.map__h2 {
+  font-size: 1.1rem;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.menu__container {
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__container__h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.menu__container__p {
+  color: #afaaaa;
+  margin-top: 0rem;
+}
+
+.fonctionnement {
+  margin-top: 2.4rem;
+  width: 100%;
+}
+.fonctionnement__h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.fonctionnement ol {
+  counter-reset: count;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.fonctionnement ol li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  list-style-type: none;
+  font-size: 1rem;
+  counter-increment: count;
+  background-color: #f0efef;
+  height: 4.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding-left: 0;
+  border-radius: 1.2rem;
+  margin-right: 1.5rem;
+}
+.fonctionnement ol li i {
+  font-size: 1.1rem;
+  color: grey;
+  margin: auto 1.5rem auto 2.5rem;
+}
+.fonctionnement ol li::before {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: -0.8rem;
+  content: counter(count);
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 0 0.49rem;
+  color: white;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

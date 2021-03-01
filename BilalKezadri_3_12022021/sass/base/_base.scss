@@ -6,12 +6,14 @@
     box-sizing: inherit;
 }
 
-html {
-    // 10px div by def of 16px
-    font-size: 62.5%;
-}
+
 
 body {
     box-sizing: border-box;
-    background: $colour-secondary;
+    max-width: 1366px;
+}
+html{
+    width: 70%;
+    margin: auto;
+    
 }
