@@ -64,8 +64,6 @@ button {
   height: 100%;
 }
 .header__url {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
