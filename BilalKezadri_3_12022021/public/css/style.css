@@ -73,38 +73,6 @@ button {
   margin: 1rem;
 }
 
-.nav {
-  padding-right: 6rem;
-  flex: 2 1 auto;
-  text-align: right;
-}
-.nav__link {
-  display: inline;
-  font-size: 3rem;
-  padding-left: 1.5rem;
-}
-.nav__link a {
-  text-decoration: none;
-  color: #99E2D0;
-}
-.nav__link--active {
-  color: #FF79DA;
-}
-.nav__link--active:hover {
-  cursor: default;
-  color: #FF79DA;
-}
-.nav__link a:hover {
-  color: #fff;
-}
-
-.container {
-  margin: 6rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #99E2D0;
-  background-color: rgba(255, 0, 212, 0.747);
-}
-
 .map {
   width: 100%;
   height: 3.5rem;
