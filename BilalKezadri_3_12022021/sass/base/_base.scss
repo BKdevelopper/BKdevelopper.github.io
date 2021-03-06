@@ -15,5 +15,8 @@ body {
 html{
     width: 70%;
     margin: auto;
+    @media all and (max-width: 1200px) {
+        width: 100%;
+    }
     
 }

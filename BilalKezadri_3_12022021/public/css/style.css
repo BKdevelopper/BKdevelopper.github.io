@@ -15,6 +15,11 @@ html {
   width: 70%;
   margin: auto;
 }
+@media all and (max-width: 1200px) {
+  html {
+    width: 100%;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -43,20 +48,37 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .btn {
   cursor: pointer;
   border: none;
-  margin: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
   height: 3rem;
   font-size: 1rem;
   width: 70%;
   max-width: 250px;
   border-radius: 5rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
   box-shadow: 1px 4px 8px 0px #8080809e;
+}
+
+.h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media all and (max-width: 1200px) {
+  .h2 {
+    text-align: left;
+    padding-left: 1rem;
+  }
 }
 
 .header {
@@ -67,8 +89,53 @@ button {
   display: flex;
   justify-content: center;
 }
+@media all and (max-width: 1200px) {
+  .header__url {
+    display: flex;
+    justify-content: center;
+  }
+}
 .header__logo {
   margin: 1rem;
+}
+@media all and (max-width: 1200px) {
+  .header__logo {
+    width: 200px;
+  }
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: -3rem;
+}
+.footer__title {
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 125%;
+  font-weight: 100;
+}
+.footer__list {
+  margin-left: 1rem;
+}
+.footer__list__element {
+  margin: 0.5rem 0 0.5rem 0;
+  list-style-type: none;
+}
+.footer__list__element:hover {
+  cursor: pointer;
+}
+.footer__list__element a {
+  color: white;
+}
+.footer__list__element__icon {
+  width: 1rem;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .map {
@@ -110,21 +177,24 @@ button {
   margin-top: 0rem;
 }
 
-.fonctionnement {
+.operation {
   margin-top: 2.4rem;
   width: 100%;
 }
-.fonctionnement__h2 {
-  text-align: center;
-  margin-top: 1rem;
-}
-.fonctionnement ol {
+.operation ol {
   counter-reset: count;
   padding-left: 0.5rem;
   display: flex;
   flex-direction: row;
 }
-.fonctionnement ol li {
+@media all and (max-width: 1200px) {
+  .operation ol {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.3rem;
+  }
+}
+.operation ol li {
   position: relative;
   display: flex;
   align-items: center;
@@ -140,12 +210,12 @@ button {
   border-radius: 1.2rem;
   margin-right: 1.5rem;
 }
-.fonctionnement ol li i {
+.operation ol li i {
   font-size: 1.1rem;
   color: grey;
   margin: auto 1.5rem auto 2.5rem;
 }
-.fonctionnement ol li::before {
+.operation ol li::before {
   position: absolute;
   display: flex;
   align-items: center;
@@ -156,6 +226,86 @@ button {
   padding: 0 0.49rem;
   color: white;
   font-size: 1.4rem;
+}
+
+.restaurants {
+  padding-top: 2.5rem;
+  height: auto;
+  padding-bottom: 3rem;
+}
+@media all and (max-width: 1200px) {
+  .restaurants__container {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+}
+.restaurants__container__title {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.restaurants__container__menu {
+  width: 92%;
+  height: 15rem;
+  margin: auto;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 5px #dbdbdb;
+}
+@media (min-width: 1024px) {
+  .restaurants__container__menu {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+.restaurants__container__menu__new {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #99E2D0;
+  width: 5.5rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  color: #278870;
+}
+.restaurants__container__menu__picture {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.restaurants__container__menu__description {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: #fff;
+  margin-top: -0.3rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+}
+.restaurants__container__menu__description__text {
+  width: 150%;
+}
+.restaurants__container__menu__description__text__title {
+  margin-bottom: 0.2rem;
+}
+.restaurants__container__menu__description__text__place {
+  color: grey;
+}
+.restaurants__container__menu__description__heart {
+  position: absolute;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+  right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

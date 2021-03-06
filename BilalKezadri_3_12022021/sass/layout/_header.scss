@@ -4,8 +4,15 @@
     &__url{
         display: flex;
         justify-content: center;
+        @media all and (max-width: 1200px) {
+            display: flex;
+            justify-content: center;
+        }
     }
     &__logo {
         margin: 1rem;
+        @media all and (max-width: 1200px) {
+            width: 200px;           
+        }
     }
 }
