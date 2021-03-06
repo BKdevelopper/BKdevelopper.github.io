@@ -233,12 +233,10 @@ a {
   height: auto;
   padding-bottom: 3rem;
 }
-@media all and (max-width: 1200px) {
-  .restaurants__container {
-    display: flex;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
+.restaurants__container {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 .restaurants__container__title {
   margin-left: 1rem;
