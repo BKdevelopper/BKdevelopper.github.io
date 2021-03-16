@@ -85,6 +85,18 @@ a {
   width: 100%;
   height: 100%;
 }
+.header i {
+  font-size: 1.3rem;
+  padding-top: 1.3rem;
+  margin-left: 1.5rem;
+  position: absolute;
+  top: 1rem;
+}
+@media all and (max-width: 1200px) {
+  .header i {
+    top: 0rem;
+  }
+}
 .header__url {
   display: flex;
   justify-content: center;
@@ -138,6 +150,139 @@ a {
   font-size: 0.8rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main figure {
+  height: 25rem;
+  margin-bottom: -1.8rem;
+}
+main img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+@media all and (max-width: 1200px) {
+  main img {
+    border-radius: 0;
+  }
+}
+
+.menu-presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1.8rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.menu-presentation h1 {
+  font-family: "shrikhand";
+  font-size: 1.8rem;
+  width: 75%;
+  margin-bottom: 2rem;
+  font-style: normal;
+}
+
+#favorite {
+  font-size: 1.6rem;
+  align-self: center;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 93%;
+  padding-bottom: 5rem;
+}
+@media all and (max-width: 1200px) {
+  form {
+    flex-direction: column;
+    padding-bottom: 0rem;
+  }
+}
+form ul {
+  margin: 0 0 2rem 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+form ul li {
+  list-style-type: none;
+  height: 3.6rem;
+  max-width: 100%;
+  margin: 0.5rem 0 2rem 0rem;
+  padding-left: 0.6rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  margin-right: 2rem;
+  box-shadow: 0 0 0.5rem 0.3rem #e5e5e5;
+}
+@media all and (max-width: 1200px) {
+  form ul li {
+    margin-right: 0rem;
+  }
+}
+
+legend {
+  position: relative;
+  font-size: 1.1rem;
+  margin-bottom: 1.6rem;
+  border: none;
+}
+legend::before {
+  content: "";
+  position: absolute;
+  width: 2.6rem;
+  height: 100%;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 1.9rem;
+}
+
+.menu-1__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.menu-1__container__title-menu {
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-1__container__subtitle-menu {
+  font-size: 0.8rem;
+  padding-left: 0.01rem;
+  flex: 1;
+}
+.menu-1__container__price {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-right: 1rem;
+  align-self: flex-end;
+}
+
+.menu-1 {
+  width: 33%;
+}
+@media all and (max-width: 1200px) {
+  .menu-1 {
+    width: 100%;
+  }
+}
+
 .map {
   width: 100%;
   height: 3.5rem;
@@ -183,14 +328,13 @@ a {
 }
 .operation ol {
   counter-reset: count;
-  padding-left: 0.5rem;
+  padding-left: 1.5rem;
   display: flex;
   flex-direction: row;
 }
 @media all and (max-width: 1200px) {
   .operation ol {
     flex-direction: column;
-    padding-left: 1.5rem;
     padding-right: 1.3rem;
   }
 }
@@ -215,6 +359,9 @@ a {
   color: grey;
   margin: auto 1.5rem auto 2.5rem;
 }
+.operation ol li i:hover {
+  color: #9356dc;
+}
 .operation ol li::before {
   position: absolute;
   display: flex;
@@ -226,6 +373,9 @@ a {
   padding: 0 0.49rem;
   color: white;
   font-size: 1.4rem;
+}
+.operation ol li:hover {
+  background-color: #f2eafb;
 }
 
 .restaurants {

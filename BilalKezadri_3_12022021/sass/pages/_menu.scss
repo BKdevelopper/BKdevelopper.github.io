@@ -1,0 +1,138 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    figure
+    {
+    height: 25rem;
+    margin-bottom: -1.8rem;
+    }
+    img {
+        height: 100%;
+        width:100%;
+        object-fit: cover;        
+        border-radius: 2rem 2rem 0 0;
+        @media all and (max-width: 1200px) {
+            border-radius: 0;
+        }
+    }
+}
+.menu-presentation
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1.8rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f2f2f2;
+    width:100%;
+    h1
+    {
+    font-family: "shrikhand";
+    font-size:1.8rem;
+    width:75%;
+    margin-bottom: 2rem;
+    font-style: normal;
+    }
+}
+#favorite
+{    
+    font-size: 1.6rem;
+    align-self: center;
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+}
+
+form
+{
+    display: flex;    
+    justify-content: center;
+    width:93%;
+    padding-bottom: 5rem;
+    @media all and (max-width: 1200px) {
+        flex-direction: column;
+        padding-bottom: 0rem;
+    }
+    ul
+    {
+    margin:0 0 2rem 0;
+    padding-left: 0;
+    list-style-type: none;
+        li
+        {
+            
+        list-style-type: none;
+        height: 3.6rem;    
+        max-width: 100%;
+        margin:0.5rem 0 2rem 0rem;
+        padding-left: 0.6rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        overflow: hidden;
+        margin-right: 2rem;   
+        box-shadow: 0 0 0.5rem 0.3rem #e5e5e5; 
+        @media all and (max-width: 1200px) {
+            margin-right: 0rem; 
+        }
+        }
+    }
+}
+legend
+{
+    position: relative;
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+    border: none;
+    &::before
+    {
+        content:'';
+        position: absolute;
+        width:2.6rem;
+        height: 100%;
+        border-bottom: 3px solid $colour-accent;
+        padding-bottom:1.9rem;
+        
+    }
+}
+.menu-1__container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex:1;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    &__title-menu
+    {
+        padding-top: 0.4rem;
+        font-size: 1.2rem; 
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    &__subtitle-menu
+    {
+        font-size: 0.8rem;
+        padding-left: 0.01rem;
+        flex:1;
+    
+    }
+    &__price
+    {
+        font-weight: bold;
+        font-size: 1rem;
+        padding-right: 1rem;
+        align-self: flex-end;
+    }
+}
+.menu-1{
+    width: 33%;
+    @media all and (max-width: 1200px) {
+        width: 100%;
+    }
+}
