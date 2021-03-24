@@ -79,7 +79,7 @@ form
         }
     }
 }
-legend
+.legend
 {
     position: relative;
     font-size: 1.1rem;
@@ -94,6 +94,47 @@ legend
         border-bottom: 3px solid $colour-accent;
         padding-bottom:1.9rem;
         
+    }
+}
+.menu-1__container{
+    &:hover{        
+        .menu-1__check{
+            width: 55px;
+            & i{
+                animation: circles 0.5s ;
+                -o-animation: circles 0.5s;
+                -webkit-animation: circles 0.5s;
+                
+            }
+         
+        }
+    }
+}
+.menu-1__check{
+    position: relative;
+    top: -51%;
+    background: #99E2D0;
+    height: 100%;
+    width: 0;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    transition: width 0.5s;
+    -o-transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & i{
+        color: white;
+        font-size: 1.4em;
+    }
+}
+@keyframes circles{
+    0%{
+      transform: rotateZ(0deg);
+    }
+    100%{
+      transform: rotateZ(360deg);
     }
 }
 .menu-1__container
@@ -113,13 +154,16 @@ legend
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+        font-weight: bold;
     }
     &__subtitle-menu
     {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding-left: 0.01rem;
         flex:1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     
     }
     &__price
@@ -128,6 +172,9 @@ legend
         font-size: 1rem;
         padding-right: 1rem;
         align-self: flex-end;
+        position: relative;
+        top: -69%;
+        
     }
 }
 .menu-1{

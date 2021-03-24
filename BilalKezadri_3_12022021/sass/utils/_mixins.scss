@@ -11,7 +11,11 @@
     margin-bottom: 3rem;
     background: linear-gradient(to top left, $colour-primary, $colour-secondary);
     color: white;
-    box-shadow: 1px 4px 8px 0px #8080809e;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    &:hover{
+        box-shadow: 0 5px 15px 0 #9d9d9d;
+        background: linear-gradient(to top left, #a16be0,#ff93e1);
+    }
 }
 @mixin h2 {
     text-align: center;

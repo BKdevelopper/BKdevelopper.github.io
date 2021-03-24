@@ -76,10 +76,7 @@
         color:grey;
         margin:auto 1.5rem auto 2.5rem;
     }
-    ol li i:hover
-    {
-        color: #9356dc;
-    }
+    
     ol li::before
     {
         position:absolute;
@@ -95,6 +92,9 @@
     }
     ol li:hover{
         background-color: #f2eafb;
+        & i{
+            color: #9356dc;
+        }
     }
 }
 .restaurants {
@@ -163,12 +163,29 @@
                         color: grey;
                     }
                 }
-                &__heart {
+                &__containerheart{
                     position: absolute;
                     font-size: 1.7rem;
                     margin-top: 0.5rem;
-                    right: 1rem;                
-                }            
+                    right: 1rem; 
+                        
+                    &__heart {                                            
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 2px black;
+                       
+                       
+                    }                      
+                    &__heart:hover::before{
+                        -webkit-text-fill-color: $colour-primary;
+                        -webkit-text-stroke: 0px transparent;                        
+                        cursor: pointer;                   
+                        -o-transition: 1s 0s ease;
+                        -webkit-transition: 1s 0s ease;
+                        transition: 1s 0s ease;
+                        
+                    }
+                 
+            }  
             }
         }
     }
