@@ -172,7 +172,7 @@
                     &__heart {                                            
                         -webkit-text-fill-color: transparent;
                         -webkit-text-stroke: 2px black;
-                       
+                                              
                        
                     }                      
                     &__heart:hover::before{
@@ -181,7 +181,7 @@
                         cursor: pointer;                   
                         -o-transition: 1s 0s ease;
                         -webkit-transition: 1s 0s ease;
-                        transition: 1s 0s ease;
+                        transition:1s 0s ease;
                         
                     }
                  
