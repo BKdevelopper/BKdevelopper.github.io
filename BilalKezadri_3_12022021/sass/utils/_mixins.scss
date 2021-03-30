@@ -15,7 +15,7 @@
     outline: none;
     &:hover{
         box-shadow: 0 5px 15px 0 #9d9d9d;
-        background: linear-gradient(to top left, #a16be0,#ff93e1);
+        background: linear-gradient(to top left, lighten($colour-primary, 10%),lighten($colour-secondary, 10%));
     }
 }
 @mixin h2 {
