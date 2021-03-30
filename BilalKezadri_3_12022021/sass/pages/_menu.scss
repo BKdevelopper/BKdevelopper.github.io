@@ -122,9 +122,8 @@ form
     height: 100%;
     border-radius: 1rem;
     overflow: hidden;
+    cursor: pointer;
     &__icon{
-        // position: relative;
-       //  top: -51%;
          background: #99E2D0;
          height: 100%;
          width: 0;
@@ -145,6 +144,9 @@ form
         display: flex;
         flex-direction: column;
         width: 100%;
+        transition: width 0.5s;
+        -o-transition: width 0.5s;
+        -webkit-transition: width 0.5s;
         &__title-menu{
             padding-top: 0.4rem;
             font-size: 1.2rem; 
@@ -170,14 +172,18 @@ form
                 font-size: 1rem;
                 padding-right: 1rem;
                 align-self: flex-end;
-                //position: relative;
-               // top: -69%;
             }
         }
     }
 }
 .menu-1__container{
     &:hover{        
+        .menu-1__container__text {
+            width: 83%;
+            transition: width 0.5s;
+         -o-transition: width 0.5s;
+         -webkit-transition: width 0.5s;
+        }
         .menu-1__container__icon{
             width: 55px;
             & i{

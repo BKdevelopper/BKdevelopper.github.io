@@ -321,6 +321,7 @@ form ul li {
   height: 100%;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
 }
 .menu-1__container__icon {
   background: #99E2D0;
@@ -343,6 +344,9 @@ form ul li {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: width 0.5s;
+  -o-transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 .menu-1__container__text__title-menu {
   padding-top: 0.4rem;
@@ -372,6 +376,12 @@ form ul li {
   align-self: flex-end;
 }
 
+.menu-1__container:hover .menu-1__container__text {
+  width: 83%;
+  transition: width 0.5s;
+  -o-transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+}
 .menu-1__container:hover .menu-1__container__icon {
   width: 55px;
 }
