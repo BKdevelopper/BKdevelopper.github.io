@@ -181,8 +181,13 @@ form
         .menu-1__container__text {
             width: 83%;
             transition: width 0.5s;
-         -o-transition: width 0.5s;
-         -webkit-transition: width 0.5s;
+            -o-transition: width 0.5s;
+            -webkit-transition: width 0.5s;
+            @media (orientation: landscape) {
+                width: 92%;
+            }
+            
+             
         }
         .menu-1__container__icon{
             width: 55px;

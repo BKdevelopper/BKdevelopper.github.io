@@ -382,6 +382,11 @@ form ul li {
   -o-transition: width 0.5s;
   -webkit-transition: width 0.5s;
 }
+@media (orientation: landscape) {
+  .menu-1__container:hover .menu-1__container__text {
+    width: 92%;
+  }
+}
 .menu-1__container:hover .menu-1__container__icon {
   width: 55px;
 }
