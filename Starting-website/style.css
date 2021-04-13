@@ -44,6 +44,16 @@ a:hover {
     padding-right: 0;
 }
 
+.row--center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact--adresse{
+    text-align: center;
+    margin-top: 1em;
+}
 .bloc-lg {
     padding: 100px 50px;
 }
