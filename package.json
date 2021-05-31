@@ -4,7 +4,7 @@
   "description": "Restaurant",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./BilalKezadri_3_12022021/sass/main.scss:./BilalKezadri_5_27042021/public/css/style.css"
+    "sass": "sass --watch ./BilalKezadri_5_27042021/sass/main.scss:./BilalKezadri_5_27042021/public/css/style.css"
     
   },
   "repository": {

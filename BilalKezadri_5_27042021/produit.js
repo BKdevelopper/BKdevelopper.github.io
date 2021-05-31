@@ -6,9 +6,10 @@ const quantity = document.querySelector('#quantity').value;
 let str = document.location; //permet de récupérer l'url de la page
 let url = new URL(str);
 let id = url.searchParams.get("id");
-
+//https://projet-oc-5.herokuapp.com/api/teddies/${id}
+//http://localhost:3000/api/teddies/${id}
 //Appel de notre API
-fetch(`http://localhost:3000/api/teddies/${id}`) //Rappel notre api + l'id de notre produit
+fetch(`https://projet-oc-5.herokuapp.com/api/teddies/${id}`) //Rappel notre api + l'id de notre produit
     .then(async res => {  //Récupère le tableau json 
         const result = await res.json() //Donne un nom au tableau json récupéré
         items = result //Result deviens items

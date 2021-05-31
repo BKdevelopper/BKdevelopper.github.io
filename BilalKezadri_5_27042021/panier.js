@@ -176,8 +176,9 @@ function sendInfo(){
       },
       products: productsId,  //Tableau des id des items
     };
-    
-   fetch(`http://localhost:3000/api/teddies/order`, {
+    //https://projet-oc-5.herokuapp.com/api/teddies/order
+    //http://localhost:3000/api/teddies/order
+   fetch(`https://projet-oc-5.herokuapp.com/api/teddies/order`, {
         method: 'POST', //Methode d'envoi
         headers: new Headers({
             "Content-Type": "application/json"//On 'précise' que l'objet envoyé sera au format JSON

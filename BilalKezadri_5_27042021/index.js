@@ -1,8 +1,9 @@
 let items;
 let $productList = document.querySelector('#container_produits');
-
+//https://projet-oc-5.herokuapp.com/api/teddies
+//http://localhost:3000/api/teddies
 //Appel de notre API
-fetch("http://localhost:3000/api/teddies")
+fetch("https://projet-oc-5.herokuapp.com/api/teddies")
     .then(async result_ => { //On rend asynchrone notre fonction
         const result = await result_.json() //Le reste du code s'execute après l'execution de la promesse 
         result.forEach(result => {
