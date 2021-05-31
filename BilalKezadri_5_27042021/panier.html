@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table id="table-container" class="table">
+            <thead>
+                <tr>
+                    <td>Article</td>
+                    <td>Quantité</td>
+                    <td>Prix</td>
+                </tr>
+            </thead>
+            <tbody id="products-body">
+            </tbody>
+            <tfoot id="products-footer">
+            </tfoot>
+        </table>
+        <div id="totalprice"></div>
+    </div>
+    <div class="clear"></div>
+    
+    
+    <form id="formulaire" class="invisible">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" class="form-control" value="" placeholder="name" required/>
+            <span id="ErrorNom"></span>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="nom">Prenom</label>
+            <input id="prenom" type="text" class="form-control" value="" placeholder="first name" required/>
+            <span id="ErrorPrenom"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input id="email" type="email" class="form-control" value="" placeholder="name@example.com" required/>
+          <span id="ErrorEmail"></span>
+        </div>
+        <div class="form-group">
+          <label for="adresse">Adresse</label>
+          <input id="adresse" type="text" class="form-control" value="" placeholder="number, rue" required/>
+          <span id="ErrorAdresse"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="ville">Ville</label>
+            <input id="ville" type="text" value="" class="form-control" placeholder="city" required/>
+            <span id="ErrorVille"></span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pb-3">
+          <button id="valider" type="submit" value="envoyer" class="col-md-4 justify-content-center btn btn-info btn-lg" >
+            envoyer
+          </button>
+        </div>
+        <div id="succes"></div>
+      </form>
+
+    
+    <script src="panier.js"></script>
+
+</body>
+</html>
