@@ -1,0 +1,142 @@
+
+$breakpoint-alpha: 480px; // adjust to your needs
+
+.container__table {
+  margin: 1em 0;
+  min-width: 300px; // adjust to your needs
+  margin: auto;
+  margin-top: 2em;
+  width: 91%;
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+    content: attr(data-th)" "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
+}
+.container__table {
+    background: #FFF;
+    color: #000;
+    border-radius: .4em;
+    overflow: hidden;
+    tr {
+      border-color: lighten(#34495E, 10%);
+    }
+    th, td {
+      margin: .5em 1em;
+      @media (min-width: $breakpoint-alpha) { 
+        padding: 1em !important; 
+      }
+    }
+    th, td:before {
+      color: #18da9c;
+    }
+  }
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    .form-group{
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        &-btn{
+            display: flex;
+            .clear{
+                margin-right: 2em;
+            }
+                       
+        }
+    }
+    & > input {
+      flex: 1 1 10ch;
+      margin: .5rem;
+      
+      &[type="email"] {
+        flex: 3 1 30ch;
+      }
+    }
+  }
+  
+  input {
+    border: none;
+    background: white;
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    
+    &[type="submit"] {
+      background: #18da9c;
+      color: white;
+      box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
+      cursor: pointer;
+    }
+  }
+#clear-command{
+    border: none;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    background: #18da9c;
+      color: white;
+      box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
+      cursor: pointer;
+      
+}
+
+.nothing{
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2em;
+}

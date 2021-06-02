@@ -10,8 +10,11 @@
 
 body {
     box-sizing: border-box;
-    max-width: 1366px;
+    max-width: 1100px;
     background: transparent url("https://bkdevelopper.github.io/BilalKezadri_5_27042021/public/css/images/banniere/minion-bg.png") repeat fixed center top;
+    //width: 1100px;
+    height: 100%;
+    margin: 0px auto 0 auto;
 
 }
 html{
@@ -22,3 +25,51 @@ html{
     }
     
 }
+section{
+    margin-top: 5em;
+}
+
+.custom-select{
+  position: relative;
+  display: block;
+  max-width: 400px;
+  min-width: 180px;
+  margin: 0 auto;
+  border: 1px solid #18da9c;
+  background-color: white;
+  z-index: 10;
+  @media all and (max-width: 1200px) {
+    margin-top: 0.2em;
+  }
+  select{
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 12px 55px 15px 15px;
+    font-size: 14px;
+    color: black;
+}
+  &:after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 38px;
+    content: '\2228';
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    border-left: 1px solid #18da9c;
+    z-index: -1;
+  }
+}
+
+

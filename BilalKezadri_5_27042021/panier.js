@@ -1,8 +1,8 @@
 let stockage = JSON.parse(localStorage.getItem("productInCart"));
 
-const tablehtml = document.querySelector("#table-container");
+const tablehtml = document.querySelector(".basket");
 const tablebody = document.querySelector("#products-body");
-const totalprice = document.querySelector("#totalprice");
+const totalprice = document.querySelector("#products-footer");
 const btnclear = document.querySelector(".clear");
 main(stockage)
 
@@ -19,9 +19,7 @@ function main(result){
 }
 
 function emptyBasket(){
-  const basketEmpty = `<table id="table-container" class="table">
-  <tr>Panier vide</tr>
-  </table>`
+  const basketEmpty = `<div class="nothing">Votre panier est vide</div>`
   tablehtml.innerHTML = basketEmpty;
  
 }
@@ -31,9 +29,9 @@ function baskettable(result){
   for(let products in result){
      containerBasket = containerBasket + `
      <tr>
-      <td class="name-td">Nom : ${result[products].name} </td>
-      <td class="quantity-td">quantite : ${result[products].quantity} </td>
-      <td class="price-td">Price : ${result[products].price * result[products].quantity} </td>               
+      <td data-th="Article" class="name-td">${result[products].name} </td>
+      <td data-th="Quantité" class="quantity-td">${result[products].quantity} </td>
+      <td data-th="Prix" class="price-td">${result[products].price * result[products].quantity} €</td>               
      </tr>       
      `
   }
@@ -62,7 +60,15 @@ function calculationPrice(result){
  
   const reducer = (accumulateur, currentValue) => accumulateur + currentValue;
   const total = totalPrice.reduce(reducer, 0); 
-  const texttotalprice = `Le prix total est de ${total} `;
+  const texttotalprice =  `<tr>
+      <th class="name-td">Total</th>
+      <td></td>
+      <td data-th="Total" class="quantity-td">${total}€ </td>
+     </tr>       
+     `
+  
+  
+  ;
   totalprice.innerHTML = texttotalprice;
   
 }

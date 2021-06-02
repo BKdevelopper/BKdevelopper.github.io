@@ -1,6 +1,9 @@
 let items;
-let productList = document.querySelector('#products');
-let addcart = document.querySelector('.add-to-products');
+let productLeft = document.querySelector('.products__left');
+let productRight = document.querySelector('.products__right__top');
+let productPrice = document.querySelector('.products__right__bottom__buy__price');
+
+let addcart = document.querySelector('#teddy-basket');
 const quantity = document.querySelector('#quantity').value;
 
 let str = document.location; //permet de récupérer l'url de la page
@@ -39,20 +42,14 @@ function main(result){
 
 
 function produitList(){    
-    productList.innerHTML +=
-    `<img class="fit-picture" src="${items.imageUrl}" style="width:20%;" alt="Grapefruit slice atop a pile of other slices">
-    <div>
-        <h2>${items.name}</h2>
-        <p>${items.description}</p> 
-        <p>${items.colors}</p> 
-        <p>${(items.price / 100)}</p> 
-        <div>
-            <a href="./produit.html?id=${items._id}">
-                <button type="button" id="items-infos">Plus d'informations</button>
-            </a>
-        </div>               
-    </div>     
-    `  
+    productLeft.innerHTML +=
+    `<img class="products__left__picture" src="${items.imageUrl}" alt="Grapefruit slice atop a pile of other slices"> `
+    productRight.innerHTML += `
+    <div class="products__right__top__container">
+        <h2 class="products__right__top__container__title">Ours en peluche "${items.name}"</h2>
+        <p class="products__right__top__container__description">${items.description}</p>         
+    </div> `
+    productPrice.innerHTML += `<p class="products__right__text__container__price">${(items.price / 100)} €</p>`
 }
 
 

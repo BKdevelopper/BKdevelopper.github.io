@@ -1,5 +1,5 @@
 let items;
-let $productList = document.querySelector('#container_produits');
+let $productList = document.querySelector('.container__produits');
 //https://projet-oc-5.herokuapp.com/api/teddies
 //http://localhost:3000/api/teddies
 //Appel de notre API
@@ -19,15 +19,18 @@ fetch("https://projet-oc-5.herokuapp.com/api/teddies")
     function productList(){
       
         $productList.innerHTML +=
-        `<img class="teddy-picture" src="${items.imageUrl}" style="width:20%;" alt="Grapefruit slice atop a pile of other slices">
-        <div>
-            <h2>${items.name}</h2>
-            <p>${items.description}</p> 
-            <div>
-                <a href="./produit.html?id=${items._id}">
-                    <button type="button" id="tedddy-infos">Plus d'informations</button>
-                </a>
-            </div>               
-        </div>   
-    </div>`
+        (`<div class="container__produits__box"> 
+            <a href="./produit.html?id=${items._id}">                    
+                <img class="container__produits__box__picture" src="${items.imageUrl}" alt="Grapefruit slice atop a pile of other slices">
+                <div class="container__produits__box__text">
+                <h2 class="container__produits__box__text__name">Peluche ${items.name}</h2>  
+                <div class="container__produits__box__text__price">
+                        <del class="container__produits__box__text__price-reduc">${parseInt((items.price / 100) * 1.1) } €</del>  
+                        <p class="container__produits__box__text__price-true"><b>${items.price / 100 } € </b></p> 
+                </div>            
+                </div>
+            </a>
+            <p class="container__produits__box__promo">-10%</p>                                
+        </div>
+        `)
     }

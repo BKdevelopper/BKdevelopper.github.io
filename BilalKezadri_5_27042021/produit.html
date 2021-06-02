@@ -4,27 +4,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    <div id="products"></div>
-    <button type="button"  id="teddy-basket" class="add-to-products">Ajouter au panier</button>
-    <select id="color" name="teddy-color"></select>
+    <header class="header"> 
+        <div class="header__container">
+            <a href="./index.html">
+                <img class="header__container__logo" src="public/css/images/logo/logo-orinoco.png" alt="img">
+            </a>            
+            <div class="header__container__basket">
+                <a href="./panier.html">
+                    <img class="header__container__basket__logo" src="public/css/images/logo/orinoco-favicon1.png" alt="img">
+                </a>
+                <span id="basketnumber">0</span>
+            </div>
+        </div>           
+    </header>
+
+    
+        <div class="products">
+            <div class="products__left"></div>
+            <div class="products__right">
+                <div class="products__right__top"></div>
+                <div class="products__right__bottom">
+                    <div class="products__right__bottom__option">
+                        <label for="quantity" class="custom-select">  
+                            <select id="quantity" class="products__right__bottom__option__quantity" name="teddy-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </label> 
+                        <label for="color" class="custom-select">
+                            <select id="color" class="products__right__bottom__option__color" name="teddy-color"></select>
+                        </label>
+                    </div>
+                    <div class="products__right__bottom__buy">
+                        <div class="products__right__bottom__buy__price"></div>
+                        <button type="button"  id="teddy-basket" class="products__right__bottom__buy__btn">Ajouter au panier</button>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+           
+        </div>
+
+     
     <!-- <select id="color"></select> -->
 
-    <select id="quantity" onclick="" class="text-center mx-auto" name="teddy-quantity">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-    </select>
-    <a href="panier.html">panier</a>
+
+ 
     
-    <span>Nombre d'élément dans le panier :</span><span id="basketnumber">0</span>  
+     
     <script src="produit.js"></script>
 </body>
 </html>
