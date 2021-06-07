@@ -31,17 +31,17 @@ fetch(`https://projet-oc-5.herokuapp.com/api/teddies/${id}`) //Rappel notre api 
     })
 
 function main(result){
-    produitList()    
-    selectcolor(result.colors)    
-    addbasket()    
-    onloadcartnumber()
+    ProductInformation()    
+    AddColorInSelect(result.colors)    
+    NumberOfItemsInTheBasket()    
+    OnloadCartNumber()
     setProduits(result)
-    addStorage(result)   
+    AddIDInATable(result)   
     test()
 }
 
 
-function produitList(){    
+function ProductInformation(){    
     productLeft.innerHTML +=
     `<img class="products__left__picture" src="${items.imageUrl}" alt="Grapefruit slice atop a pile of other slices"> `
     productRight.innerHTML += `
@@ -54,7 +54,7 @@ function produitList(){
 
 
 
-function addbasket(){    
+function NumberOfItemsInTheBasket(){    
 
     addcart.addEventListener("click", function() {
     const ProductQuantity = document.querySelector('#quantity').value;
@@ -75,7 +75,7 @@ function addbasket(){
     });
 }
 
-function onloadcartnumber(){
+function OnloadCartNumber(){
     const nbrelement = document.getElementById("basketnumber");
     let productnumber = localStorage.getItem('basket');
     if(productnumber){
@@ -109,7 +109,7 @@ function setProduits(result){
 }
 
 
-function addStorage(result) {   
+function AddIDInATable(result) {   
     addcart.addEventListener("click", function() {            
       let idProduct = JSON.parse(localStorage.getItem("id"));  
       if (idProduct === null) {      
@@ -121,7 +121,7 @@ function addStorage(result) {
     
   }
 
-function selectcolor(result){
+function AddColorInSelect(result){
     let color = document.querySelector("#color");   
 
     for (let u = 0; u < result.length; u++) {

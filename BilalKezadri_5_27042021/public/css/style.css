@@ -48,8 +48,6 @@ section {
   border: none;
   outline: none;
   background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border-radius: 0;
   margin: 0;
@@ -88,6 +86,12 @@ h1 {
 h2 {
   font-weight: bold;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+}
+@media all and (max-width: 1200px) {
+  h2 {
+    margin-left: 1em;
+  }
 }
 
 textarea {
@@ -193,7 +197,6 @@ a {
   height: 100%;
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
-  object-fit: revert;
   padding: 0.2em;
 }
 @media all and (max-width: 1200px) {
@@ -312,11 +315,6 @@ a {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   object-fit: cover;
-}
-@media all and (max-width: 1200px) {
-  .container__produits__box__picture {
-    object-fit: revert;
-  }
 }
 .container__produits__box__text {
   margin-left: 14px;

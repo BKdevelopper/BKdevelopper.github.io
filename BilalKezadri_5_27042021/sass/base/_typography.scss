@@ -13,6 +13,10 @@ h1 {
 h2{
     font-weight: bold;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin-bottom: 1em;
+    @media all and (max-width: 1200px) {
+       margin-left: 1em;
+    }
 }
 textarea {
     font-family: 'Roboto', sans-serif;

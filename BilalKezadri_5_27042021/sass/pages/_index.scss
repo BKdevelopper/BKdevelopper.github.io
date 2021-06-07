@@ -37,9 +37,7 @@
                 border-top-right-radius: 15px;
                 border-top-left-radius: 15px;
                 object-fit: cover;
-                @media all and (max-width: 1200px) {
-                    object-fit: revert;
-                }
+
             }
             &__text{
                 margin-left: 14px;

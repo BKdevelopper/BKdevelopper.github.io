@@ -1,5 +1,5 @@
 let items;
-let $productList = document.querySelector('.container__produits');
+let $ProductInformation = document.querySelector('.container__produits');
 //https://projet-oc-5.herokuapp.com/api/teddies
 //http://localhost:3000/api/teddies
 //Appel de notre API
@@ -9,19 +9,19 @@ fetch("https://projet-oc-5.herokuapp.com/api/teddies")
         result.forEach(result => {
             items = result //Result deviens teddy
             //Appel de nos functions
-            productList()
+            ProductInformation()
         })
     })
     .catch(error => {
         console.log(error);
     })
 
-    function productList(){
+    function ProductInformation(){
       
-        $productList.innerHTML +=
+        $ProductInformation.innerHTML +=
         (`<div class="container__produits__box"> 
             <a href="./produit.html?id=${items._id}">                    
-                <img class="container__produits__box__picture" src="${items.imageUrl}" alt="Grapefruit slice atop a pile of other slices">
+                <img class="container__produits__box__picture" src="${items.imageUrl}" alt="img">
                 <div class="container__produits__box__text">
                 <h2 class="container__produits__box__text__name">Peluche ${items.name}</h2>  
                 <div class="container__produits__box__text__price">
