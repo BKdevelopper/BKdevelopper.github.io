@@ -12,7 +12,7 @@ function main(result) {
     emptyBasket()
   } else {
     addrowontheTable(result)
-    addBottonCommand()
+    addButtonCommand()
     calculationPrice(result)
     mainForm(result)
   }
@@ -38,7 +38,7 @@ function addrowontheTable(result) {
   tablebody.innerHTML = containerBasket;
 }
 
-function addBottonCommand() {
+function addButtonCommand() {
   const btnsup = `<a href="index.html"><button type="button" onclick="clearCommand()" id="clear-command">Annuler la commande</button></a>`
   btnclear.innerHTML = btnsup;
 }
