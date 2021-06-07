@@ -43,7 +43,7 @@ function main(result){
 
 function ProductInformation(){    
     productLeft.innerHTML +=
-    `<img class="products__left__picture" src="${items.imageUrl}" alt="Grapefruit slice atop a pile of other slices"> `
+    `<img class="products__left__picture" src="${items.imageUrl}" alt="img"> `
     productRight.innerHTML += `
     <div class="products__right__top__container">
         <h2 class="products__right__top__container__title">Ours en peluche "${items.name}"</h2>
