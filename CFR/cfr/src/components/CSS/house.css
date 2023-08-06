@@ -1,0 +1,58 @@
+.container-house {
+  display: flex;
+  flex-direction: column;
+  background-color: #8db6e6;
+}
+.container-house-banner svg {
+  width: 100%;
+  height: 61px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.elementor-shape-fill {
+  fill: white;
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+.container-house-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-house-img img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.container-house-img {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+.container-house-text-h1 {
+  font-family: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff !important;
+  text-align: center;
+}
+.container-house-text-h2 {
+  font-family: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff !important;
+  text-align: center;
+}
+.container-house-text-h3 {
+  font-family: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: red !important;
+  text-align: center;
+}

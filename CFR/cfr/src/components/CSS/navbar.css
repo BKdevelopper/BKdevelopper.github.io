@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+  --mainColor: #ed7703;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+}
+
+.header-nav {
+  height: 120px;
+  padding: 0 2rem;
+  /* background-color: var(--mainColor); */
+  color: var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  position: fixed !important;
+  width: 100%;
+}
+.header-fixed {
+  position: fixed !important;
+  left: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  animation: sticky 1s;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+.navbar img {
+  width: 100px;
+  height: 100px;
+}
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-contact-devis {
+  background-color: #ffffff;
+  font-family: 'Proxima Bold', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #f08419;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  width: 135px;
+  text-align: center;
+  padding: 22px 15px 18px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 10px;
+  border-bottom: 5px solid;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 32px;
+  z-index: 20;
+}
+.navbar-contact-phone {
+  background-color: white;
+  padding: 11px 18px 10px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  margin-top: 5px;
+  font-family: 'Proxima Bold', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 35px;
+  color: #f08419;
+  text-decoration: none;
+}
+@media screen and (max-width: 1540px) {
+  .navbar-contact-phone {
+    visibility: hidden;
+  }
+  .navbar-contact-devis {
+    visibility: hidden;
+  }
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  header div,
+  nav {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+  }
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
